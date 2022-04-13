@@ -1,0 +1,46 @@
+/* Criação de variável dentro do css */
+:root{
+  --vermelho:#E50914;
+  --preta:#141414;
+}
+
+/* Estilização aplicada a todos os elementos */
+*{
+  margin:0;
+  padding:0;
+  /* Propriedade usada para que o conteúdo da box não ultrapasso o elemento pai */
+  box-sizing: border-box;
+}
+
+body{
+  /* Utilização da variável dentro do css */
+  background: var(--preta);
+  font-family: 'Arial', Times, serif;
+  color:white;
+}
+
+header .container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+header .logo{
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size:40px;
+}
+
+header nav a{
+  text-decoration:none;
+  color:#AAA;
+  margin-right: 10px;
+}
+
+
+header nav a:hover{
+  color:#fff;
+}
