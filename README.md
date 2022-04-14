@@ -23,7 +23,7 @@ $ Exemplos de métodos:
 
 
 ## SET
-- São esruturas que armazenam apenas valores unicos
+- São estruturas que armazenam apenas valores unicos
 
 
 ```
