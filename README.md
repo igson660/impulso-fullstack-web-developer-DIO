@@ -1,5 +1,9 @@
 # **Clone do NetFlix**
 
+<p align="center">
+ <img width="470" src="asserts/git-show-app.gif">
+</p>
+
 
 ## :rocket: Technologies
 
