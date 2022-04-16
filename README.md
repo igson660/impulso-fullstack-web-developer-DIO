@@ -21,5 +21,5 @@
 
 ### Links Uteis
  - [Throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
- - [try...Catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+ - [Try...Catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
  - [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
