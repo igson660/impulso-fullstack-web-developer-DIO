@@ -1,44 +1,25 @@
-## Map
-- É uma coleção de arrays no formato chave-valor
-- Pode se iterado por um loop for..fo
+# Erros
 
-```
-$ Exemplos de métodos:
-- Declaração => const myMap = new Map()
+## ECMAScript
 
-- Adicionar => myMap.set('apple', 'fruit')
-  obs: sempre sera usado o formato chave-valor para adicionar elementos
+- É um erro que aconce em tempo de execução
+- É composto por: mensagem, nome, linha e call Stack (plinha de chamada)
 
-- Ler => myMap.get('apple')
-  obg: o valor passado será o da chave, caso o valor passado não exista o retorno sera "undefined"
+## DOMException
+- É um erro no DOM
+- Erro dado na página da web
+- Erro referente a estrutura da arvore DOM
 
-- Deletar => myMap.delete('apple')
-```
-#### Map VS Objeto
-- Maps podem ter chaves de qualquer tipo, ao contrário dos Objetos que só lhe é permitido chaves no formato de "string"
-- Maps possuem a propriedade "length"
-- Maps são mais fáceis de iterar
-- Map é utilizado quando o valor das chaves é desconhecido
-- Map só possuem valores do mesmo tipo
+### Tratamento dos erros
+- Throw: é uma palavra reservada para lançar um erro
+- Try...Catch: são dois blocos de código, onde no try será inserido a lógica e caso ocorra alguma espércie de erro, esse erro será enviado para o bloco do catch onde será manipulada da maneira desejada
+- Finaly: é uma instrução opcional que sempre será executado após a execução to bloco anterior, seja ele o try ou o catch
+- Error: é um objeto nativo do JS que aceita os seguintes parametros (message, fileName, lineNumber) onde todos são opcionais, sendo reslvado que os parametros fileName e linNumber ainda não possuem suporte em todos os navegadores. O Error também é capaz de receber um nome
+`const meuErro = new Error('Mensagem de erro')
+ meuErro.name = 'nomeDoErro'
+`
 
-
-## SET
-- São estruturas que armazenam apenas valores unicos
-
-
-```
-$ Exemplos de métodos:
-- Declaração => const mySet = new Set()
-
-- Adicionar => mySet.add(1)
-
-- Ler => mySet.has(1)
-  obg: esse método retorna um boleano
-
-- Deletar => mySet.delete(1)
-```
-
-### Set VS Array
-- Set Possui valores unicos
-- Set tem seu tamanho dado pela propriedade "size"
-- Set não possui os métodos map, filter, reduce etc.
+### Links Uteis
+ - [Throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
+ - [try...Catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+ - [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
